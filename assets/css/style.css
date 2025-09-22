@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    line-height: 46px;
+}
+
+#header .logo {
+    color: white;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.nav a {
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -6px;
+    height: 2px;
+    background: #fff;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+.nav a:hover::after {
+    transform: scale(1);
+}
+
+#slider {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url('../img/snapedit_1758347706374.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 80px 100px 0;
+}
+
+#slider .noidung {
+    color: white;
+    max-width: 700px;
+
+}
+
+.noidung h2 {
+    font-size: 3em;
+    letter-spacing: .03em;
+}
+
+.noidung p {
+    margin: 10px 0 40px;
+
+}
+
+.noidung a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.login {
+
+    color: #f8f6f6;
+}
+
+#content {}
+
+#footer {}
